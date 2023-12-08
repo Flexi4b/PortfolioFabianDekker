@@ -18,9 +18,9 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="background-color:mediumpurple">
+        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="background-color:purple">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/Name-Pic.png" alt="Fabian Dekker" /></a>
+                <a class="navbar-brand" href="#page-top"><img src="assets/Name-Pic.png" alt="Fabian Dekker"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -118,11 +118,11 @@
                 </div>
             </div>
         </section>
-        <!-- Services-->
-        <section class="page-section" id="services">
+        <!-- Skills-->
+        <section class="page-section" id="skills">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h2 class="section-heading text-uppercase">Skills</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <div class="row text-center">
@@ -371,21 +371,30 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Bullforg Blitz</h2>
-                                    <p class="item-intro text-muted">Unity3D • C# • Top-down shooter</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/Bullfrog_Blitz_poster.png" alt="..." />
+                                    <!--<p class="item-intro text-muted">Unity3D • C# • Top-down shooter</p>-->
                                     <p>Bullfrog Blitz is a top down shooter where your mission is to defeat the enemy boss. 
                                     To complete this mission you have to fight your way through multiple enemies and your decreasing ammo, 
                                     so be carefull of what weapon you need to use and which enemy really needs to be killed.</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
+                                    <img class="img-fluid d-block mx-auto" src="assets/Bullfrog_Blitz_poster.png" alt="Bullfrog Blitz poster" />
+                                    <h3 class="text-uppercase">Laser Enemy</h3>
+                                    <p>For this project I was working with a team of developers and artists and we decided that I was going to work on the enemies. 
+                                    For the laser enemy I made a vision cone so that the enemy could “see” whenever the player was in range to shoot, 
+                                    after that I made it so that this enemy would first aim at the player and shoot the laser after 2 seconds. 
+                                    This enemy will continue to shoot his laser unit the player get out of his vision or gets killed</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" style="background-color:mediumpurple" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Code
+                                    </button>
+                                    <h1>&nbsp;</h1>
+                                    <h3 class="text-uppercase">Melee Enemy</h3>
+                                    <p>For the melee enemy I used the same vision cone as the laser enemy but this enemy will track the player down and will hit the player after getting close enough. 
+                                    After its attack it will back up so as to not get hurt by the players melee weapon. 
+                                    It will keep doing this pattern until the player is defeated or until its killed.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Code
+                                    </button>
+                                    <h1>&nbsp;</h1>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close Project
