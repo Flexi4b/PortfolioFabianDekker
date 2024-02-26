@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portfolio Fabian Dekker</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+    <nav id="sidebar-wrapper" style="background-color:indigo">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand" style="background-color:darkviolet"><a href="homepage.html">Fabian Dekker</a></li>
+            <li class="sidebar-nav-item"><a href="#current">Dread Race</a></li>
+            <li class="sidebar-nav-item"><a href="#contribution">My Contributions</a></li>
+            <li class="sidebar-nav-item"><a href="#projects">Projects</a></li>
+            <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Current Project-->
+    <section class="content-section" id="current" style="background-color:gray">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center" style="color:black">
+                <h2 class="mb-1">Dread Race</h2>
+                <video autoplay muted loop controls width="900">
+                    <source src="assets/DreadRace_Assets/Dread_Race_Gameplay.mp4" type="video/mp4" />
+                </video>
+                <h4 class="mb-0">Dread Race is a race game in which you try to complete 3 laps as fast as possible!</h4>
+                <h4 class="mb-0">The track is made up out of lots of twists and turns, and a split path as soon as you exit the church.</h4>
+            </div>
+        </div>
+    </section>
+    <!-- My Contributions-->
+    <section class="content-section" id="contribution" style="background-color:dimgray">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center" style="color:black">
+                <h2 class="mb-5">My Contributions:</h2>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <video autoplay muted loop width="600" height="350">
+                            <source src="assets/DreadRace_Assets/Dread_Race_Drift.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="mb-5"><u>Drifting</u></h1>
+                        <h3 class="mb-1">
+                            Because the track has many sharp turns, a drift was absolutely necessary. But making the drift work was rather difficult. 
+                            I needed to make sure you could not drift for too long, as you would just spin out, and in needed to feel good when you use it.
+                            So, I decided to use two sets of wheels. The first set is for driving normally, the second one is for when the player decides to drift.
+                        </h3>
+                        <h3 class="mb-1">
+                            This way I could give new values to the wheels without having to change them back.
+                            For instance, the normal wheels forward- and sideways frictions asymptote slip sits at a 0.8f and 0.05f respectfully.
+                            While for the drift wheels the same forward- and sideways frictions asymptote slip is a 0.25f and 0.9f respectfully.
+                            What this means is that while the drift is engaged the cars forward friction is set lower than the sideways friction,
+                            so that the car turns sideways and drifts.
+                        </h3>
+                        <h6><a href="" target="_blank" rel="noopener noreferrer">Learn more here</a></h6> <!--Github here!-->
+                    </div>
+                </div>
+                <br /><hr /><br />
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <h1 class="mb-5"><u>Path Triggers</u></h1>
+                        <h3 class="mb-1">
+                            Because the track has a split path, there needed to be restrictions on the other path so the player would not drive around in circles.
+                            This is why, when you exit the church and choose a path (let's say path A), the other path (path B) gets blocked off.
+                            The closed path (path B) only opens again when the player chooses that path (path B) when it exits the church,
+                            of course this means that again the other path (path A) gets closed off.
+                        </h3>
+                        <h6><a href="" target="_blank" rel="noopener noreferrer">Learn more here</a></h6> <!--Github here!-->
+                    </div>
+                    <div class="col-lg-6" style="color:black">
+                        <video autoplay muted loop width="600" height="350">
+                            <source src="assets/DreadRace_Assets/Dread_Race_PathTrigger.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <br /><hr /><br />
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <video autoplay muted loop width="600" height="350">
+                            <source src="assets/DreadRace_Assets/Dread_Race_Respawn.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="mb-5"><u>Checkpoints</u></h1>
+                        <h3 class="mb-1">
+                            Just in case the player got stuck off the road or does not remember which way to go, there needed to be a checkpoint system.
+                            So, over the track are some checkpoints, whenever the player drives into one of these checkpoints, their position and rotation gets saved.
+                            This way, whenever the player presses the respawn key, they get teleported back towards the last touched checkpoint.
+                        </h3>
+                        <h6><a href="" target="_blank" rel="noopener noreferrer">Learn more here</a></h6> <!--Github here!-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects-->
+    <section class="content-section" id="projects" style="background-color:darkgray">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center" style="color:black">
+                <h2 class="mb-5">My Projects:</h2>
+            </div>
+            <div class="row gx-0">
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="bullfrog_blitz.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">Bullfrog Blitz</div>
+                                <p class="mb-0">It's a top-Down shooter!</p>
+                                <br /><br /><br /><br />
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/BullfrogBlitz_Assets/Bullfrog_Blitz_poster.png" alt="Join forces and defeat the sovjet rats! - Poster" />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="dread_race.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">Dread Race</div>
+                                <p class="mb-0">It's a night racer!</p>
+                                <br /><br /><br /><br />
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/DreadRace_Assets/Dread_racer_poster.png" alt="Spooky scene of a church in a cemetary." />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="helpderly.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">Helpderly</div>
+                                <p class="mb-0">It's a 2D Fetch Quest game.</p>
+                                <br />
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/Helpderly_Assets/Helpderly_screenshot.png" alt="Screenshot of the starting area in the game." />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="(temp)_snowcannonman.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">(Temp) SnowCannonMan</div>
+                                <p class="mb-0">(Temp) It's a geussing game.</p>
+                                <br />
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/SnowCannonMan_Assets/SnowCannonMan_Screenshot.png" alt="3 snowman cheering" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center" id="contact" style="background-color:darkslategray">
+        <div class="container px-4 px-lg-5">
+            <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                </li>
+            </ul>
+            <p class="small mb-0" style="color:white">Copyright &copy; Portfolio Fabian Dekker 2024</p>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
