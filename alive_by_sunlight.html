@@ -50,21 +50,21 @@
                 <div class="row gx-0">
                     <div class="col-lg-6">
                         <video autoplay muted loop width="600" height="350">
-                            <source src="assets/BullfrogBlitz_Assets/Bullfrog_Blitz_Boss.mp4" type="video/mp4" />
+                            <source src="assets/AliveBySunlight_Assets/Alive_By_Sunlight_Player_Pickup.mp4" type="video/mp4" />
                         </video>
                     </div>
                     <div class="col-lg-6">
-                        <h1 class="mb-5"><u>The Boss</u></h1>
+                        <h1 class="mb-1"><u>Player pickup survivor</u></h1>
                         <h3 class="mb-1">
-                            To make the boss stand out from its minions I decided the boss needed different shooting patterns.
-                            I reused the laser from the laser enemy, but made it fire 3 lasers so that it had a greater chance of hitting the player.
-                            Lastly, I wanted the boss to fire lots of bullets at once with a lot of range.
+                            Whenever the player encounters a survivor, they can press the carry key to pick up the player.
+                            This survivor can now no longer fix generators. The player can carry this survivor to a cage and can put them in said cage.
+                            But the player cannot carry more than one survivor and can only put one survivor in one cage.
                         </h3>
-                        <br />
                         <h3 class="mb-1">
-                            To randomize the bosses attacks I made it so that when the player leaves the bosses range, the boss would change attack.
-                            Also, I made it so that the boss has a much greater possibility to fire his laser than to fire his bullets,
-                            each time he changes attack for balancing purposes.
+                            For this to work, I needed to get all the information I needed from the survivor when the player picks up said survivor.
+                            If the player picked up a survivor, the survivor would no longer be visible and would get a secret state.
+                            This state activates when the player puts the survivor in a cage, only then will the invisible survivor walk to the chosen cage.
+                            This way, whenever the survivor gets freed, it will look like the survivor just walked out of the cage.
                         </h3>
                         <h6><a href="" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6> <!--Github here!-->
                     </div>
@@ -72,17 +72,19 @@
                 <br /><hr /><br />
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <h1 class="mb-5"><u>Laser minion</u></h1>
+                        <h1 class="mb-1"><u>Free locked up NPC</u></h1>
                         <h3 class="mb-1">
-                            All the minions of the boss needed to be not too difficult to beat, but also not to easy.
-                            So, for the laser minion I decided that when the player came into the minions' field of view, the minion would first show where he is going to shoot,
-                            and after a few seconds fire his laser. As long as the player would stay in the minions' field of view, will the minion keep firing his laser.
+                            If a survivor gets locked up by the player, the other survivors will go and set their locked companion free.
+                            As soon as the state from the other survivors' switches, will they move towards the cage.
+                            When they get in contact with the cage, a timer will go of. 
+                            And as long as a survivor remains in contact with the cage, will it open up after a while.
+                            But if the timer has already started counting and the survivors get scared off by the player, will the timer decrease again.
                         </h3>
                         <h6><a href="" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6> <!--Github here!-->
                     </div>
                     <div class="col-lg-6" style="color:black">
                         <video autoplay muted loop width="600" height="350">
-                            <source src="assets/BullfrogBlitz_Assets/Bullfrog_Blitz_Laser_Enemy.mp4" type="video/mp4" />
+                            <source src="assets/AliveBySunlight_Assets/Alive_By_Sunlight_FreeNPC.mp4" type="video/mp4" />
                         </video>
                     </div>
                 </div>
@@ -90,16 +92,28 @@
                 <div class="row gx-0">
                     <div class="col-lg-6">
                         <video autoplay muted loop width="600" height="350">
-                            <source src="assets/BullfrogBlitz_Assets/Bullfrog_Blitz_Melee_Enemy.mp4" type="video/mp4" />
+                            <source src="assets/AliveBySunlight_Assets/Alive_By_Sunlight_Brain.mp4" type="video/mp4" />
                         </video>
                     </div>
                     <div class="col-lg-6">
-                        <h1 class="mb-5"><u>Melee minion</u></h1>
+                        <h1 class="mb-1"><u>Survivor's brain</u></h1>
                         <h3 class="mb-1">
-                            While programming the melee minion I decided that I did not want the minion to relentlessly keep attacking the player.
-                            So, when this minion gets the player in his field of view, the minion will go in attack mode and make a swing against the player.
-                            After his swing, will the minion back up for a few seconds. And when ready again will attack once more.
-                            But if the player decides to attack this minion with their own melee weapon, then will the minion keep attacking for as long it can.
+                            For the survivors to do all their decision making, the survivors needed to have a brain.
+                            To make this brain work and not be a complete mess in code, a state machine was needed.
+                            In this state machine are the following states:
+                        </h3>
+                        <h3 class="mb-1">
+                            - Seek & repair generator: The survivors will go look for a random generator and fix it when they arrive.
+                        </h3>
+                        <h3 class="mb-1">
+                            - Flee player: Whenever the player gets to close, the survivors will run away and try to avoid the player.
+                        </h3>
+                        <h3 class="mb-1">
+                            - Seek & free locked survivor: If a survivor was caught and put in a cage, whenever the survivor switches state,
+                            will they go to this cage and free the survivor.
+                        </h3>
+                        <h3 class="mb-1">
+                            - Seek gate: Whenever all the generators are fixed, the gate will unlock and all survivors will run towards it to escape.
                         </h3>
                         <h6><a href="" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6> <!--Github here!-->
                     </div>
@@ -141,10 +155,9 @@
                 <div class="col-lg-6">
                     <a class="portfolio-item" href="alive_by_sunlight.html">
                         <div class="caption">
-                            <div class="caption-content">
+                            <div class="caption-content mb-5">
                                 <div class="h1">Alive By Sunlight</div>
                                 <p class="mb-0">It's you versus the survivors!</p>
-                                <br />
                             </div>
                         </div>
                         <div class="img-fluid">
@@ -155,10 +168,9 @@
                 <div class="col-lg-6">
                     <a class="portfolio-item" href="pokemon_paradoxical.html">
                         <div class="caption">
-                            <div class="caption-content">
+                            <div class="caption-content mb-5">
                                 <div class="h1">Pokémon Paradoxical</div>
                                 <p class="mb-0">My own pokémon game!</p>
-                                <br />
                             </div>
                         </div>
                         <div class="img-fluid">
