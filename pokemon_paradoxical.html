@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portfolio Fabian Dekker</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+    <nav id="sidebar-wrapper" style="background-color:indigo">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand" style="background-color:darkviolet"><a href="homepage.html">Fabian Dekker</a></li>
+            <li class="sidebar-nav-item"><a href="#current">Bullfrog Blitz</a></li>
+            <li class="sidebar-nav-item"><a href="#contribution">My Contributions</a></li>
+            <li class="sidebar-nav-item"><a href="#projects">Projects</a></li>
+            <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Current Project-->
+    <section class="content-section" id="current" style="background-color:forestgreen">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center" style="color:black">
+                <h2 class="mb-1">Bullfrog Blitz</h2>
+                <video autoplay muted loop controls width="900">
+                    <source src="assets/BullfrogBlitz_Assets/Bullfrog_Blitz_Gameplay.mp4" type="video/mp4" />
+                </video>
+                <h4 class="mb-0">Bullfrog Blitz is a Top-down shooter, in which your goal is to reach the boss and defeat him! </h4>
+                <h4 class="mb-0">You do so by getting past all the bosses minions and making sure you have enough ammunition left for the boss.</h4>
+            </div>
+        </div>
+    </section>
+    <!-- My Contribution-->
+    <section class="content-section" id="contribution" style="background-color:darkgreen">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center" style="color:black">
+                <h2 class="mb-5">My Contributions:</h2>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <video autoplay muted loop width="600" height="350">
+                            <source src="assets/BullfrogBlitz_Assets/Bullfrog_Blitz_Boss.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="mb-5"><u>The Boss</u></h1>
+                        <h3 class="mb-1">
+                            To make the boss stand out from its minions I decided the boss needed different shooting patterns.
+                            I reused the laser from the laser enemy, but made it fire 3 lasers so that it had a greater chance of hitting the player.
+                            Lastly, I wanted the boss to fire lots of bullets at once with a lot of range.
+                        </h3>
+                        <br />
+                        <h3 class="mb-1">
+                            To randomize the bosses attacks I made it so that when the player leaves the bosses range, the boss would change attack.
+                            Also, I made it so that the boss has a much greater possibility to fire his laser than to fire his bullets,
+                            each time he changes attack for balancing purposes.
+                        </h3>
+                        <h6><a href="" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6> <!--Github here!-->
+                    </div>
+                </div>
+                <br /><hr /><br />
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <h1 class="mb-5"><u>Laser minion</u></h1>
+                        <h3 class="mb-1">
+                            All the minions of the boss needed to be not too difficult to beat, but also not to easy.
+                            So, for the laser minion I decided that when the player came into the minions' field of view, the minion would first show where he is going to shoot,
+                            and after a few seconds fire his laser. As long as the player would stay in the minions' field of view, will the minion keep firing his laser.
+                        </h3>
+                        <h6><a href="" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6> <!--Github here!-->
+                    </div>
+                    <div class="col-lg-6" style="color:black">
+                        <video autoplay muted loop width="600" height="350">
+                            <source src="assets/BullfrogBlitz_Assets/Bullfrog_Blitz_Laser_Enemy.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <br /><hr /><br />
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <video autoplay muted loop width="600" height="350">
+                            <source src="assets/BullfrogBlitz_Assets/Bullfrog_Blitz_Melee_Enemy.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="mb-5"><u>Melee minion</u></h1>
+                        <h3 class="mb-1">
+                            While programming the melee minion I decided that I did not want the minion to relentlessly keep attacking the player.
+                            So, when this minion gets the player in his field of view, the minion will go in attack mode and make a swing against the player.
+                            After his swing, will the minion back up for a few seconds. And when ready again will attack once more.
+                            But if the player decides to attack this minion with their own melee weapon, then will the minion keep attacking for as long it can.
+                        </h3>
+                        <h6><a href="" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6> <!--Github here!-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects-->
+    <section class="content-section" id="projects" style="background-color:green">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center" style="color:black">
+                <h2 class="mb-5">My Projects:</h2>
+            </div>
+            <div class="row gx-0">
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="bullfrog_blitz.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">Bullfrog Blitz</div>
+                                <p class="mb-0">It's a top-Down shooter!</p>
+                                <br /><br /><br /><br />
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/BullfrogBlitz_Assets/Bullfrog_Blitz_poster.png" alt="Join forces and defeat the sovjet rats! - Poster" />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="dread_race.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">Dread Race</div>
+                                <p class="mb-0">It's a night racer!</p>
+                                <br /><br /><br /><br />
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/DreadRace_Assets/Dread_racer_poster.png" alt="Spooky scene of a church in a cemetary." />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="alive_by_sunlight.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">Alive By Sunlight</div>
+                                <p class="mb-0">It's you versus the survivors!</p>
+                                <br />
+                            </div>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="assets/AliveBySunlight_Assets/AliveBySunlightTitle.png" alt="Titlescreen Alive By Sunlight" height="462" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="pokemon_paradoxical.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">Pokémon Paradoxical</div>
+                                <p class="mb-0">My own pokémon game!</p>
+                                <br />
+                            </div>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="assets/Paradoxical_Assets/Pokemon_Paradoxical_Titlescreen.png" alt="Titlescreen Pokémon Paradoxical" height="462" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center" id="contact" style="background-color:darkslategray">
+        <div class="container px-4 px-lg-5">
+            <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                </li>
+            </ul>
+            <p class="small mb-0" style="color:white">Copyright &copy; Portfolio Fabian Dekker 2024</p>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
