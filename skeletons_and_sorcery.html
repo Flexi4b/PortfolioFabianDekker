@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portfolio Fabian Dekker</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+    <nav id="sidebar-wrapper" style="background-color:indigo">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand" style="background-color:darkviolet"><a href="index.html">Fabian Dekker</a></li>
+            <li class="sidebar-nav-item"><a href="#current">Skeletons & Sorcery</a></li>
+            <li class="sidebar-nav-item"><a href="#contribution">My Contributions</a></li>
+            <li class="sidebar-nav-item"><a href="#projects">Projects</a></li>
+            <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Current Project-->
+    <section class="content-section" id="current" style="background-color:goldenrod">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center" style="color:black">
+                <h2 class="mb-1">Skeletons & Sorcery</h2>
+                <video autoplay muted loop width="900">
+                    <source src="assets/Skeletons&Sorcery_Assets/Skeletons&Sorcery_Trailer.mp4" type="video/mp4" />
+                </video>
+                <h4 class="mb-0">Skeletons & Sorcery is a rouge-like card game.</h4>
+                <h4 class="mb-0">You have entered this tower to climb to the top, but all the creatures in this tower are trying to kick you out.</h4>
+                <br />
+                <h4><a href="https://flexi4.itch.io/skeletons-and-sorcery" target="_blank" rel="noopener noreferrer">This game is playable on Itch.io</a></h4>
+                <h4 class="mb-0">Made by:</h4>
+                <h4 class="mb-0">Artists: Luna Oppatja, Santos Geerman, Vic Ramjiawansingh, Lee Lotus Rijbeek, Louisa Burfitt.</h4>
+                <h4 class="mb-0">Developers: Elgin Huisden, Casper Ketelaars & Fabian Dekker.</h4>
+            </div>
+        </div>
+    </section>
+    <!-- My Contribution-->
+    <section class="content-section" id="contribution" style="background-color:darkgoldenrod">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center" style="color:black">
+                <h2 class="mb-5">My Contributions:</h2>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <video autoplay muted loop width="600" height="350">
+                            <source src="assets/Skeletons&Sorcery_Assets/Skeletons&Sorcery_Warrior_State.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="mb-1"><u>Warrior Enemy</u></h1>
+                        <h3 class="mb-1">
+                            Whenever the player ends their turn, it is time for the enemies to attack.
+                            The warrior attacks the player every turn, that is until the warrior gets to half of his full health and gives itself an attack buff.
+                            When the warrior has the attack buff active it will deal dubbel damage to the player.
+                            This buff will only trigger once, this is so the warrior wont get too strong when it gets healed by the healer enemy.
+                        </h3>
+                        <h3 class="mb-1">
+                            For this to work, I made 3 states for the warrior to be in. This way i can make the warrior do his actions whenever i choose.
+                            His states are: Attacking, buff themself and waiting. When the attacking state is active, it will attack the player.
+                            Buff themselfs occurs when the warriors health reaches half.
+                            State waiting is used before or after the warriors turn, this is so the player & other enemies have a chance to do their actions.
+                        </h3>
+                        <h6><a href="https://github.com/Flexi4b/Player_Carry_NPC/blob/main/Player_Carry_NPC.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
+                    </div>
+                </div>
+                <br /><hr /><br />
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <h1 class="mb-1"><u>Enemies Animations</u></h1>
+                        <h3 class="mb-1">
+                            All enemies have animations for all their actions. They all have an: Start, Idle, Attack, Buff/Heal/Taunt, Hit and Death animation.
+                            I needed to make sure that all the animations got triggerd to play and all at the right time.
+                            The warrior enemy was the most difficult to figure out when to play its animation and to not mess with the other code that was already written.
+                            But after making all the animations work, it was much easier to code the animation triggers for the healer and tank enemies.
+                        </h3>
+                        <h6><a href="https://github.com/Flexi4b/Free_Locked_NPC/blob/main/CageBehavior.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
+                    </div>
+                    <div class="col-lg-6" style="color:black">
+                        <video autoplay muted loop width="600" height="350">
+                            <source src="assets/Skeletons&Sorcery_Assets/Skeletons&Sorcery_Enemy_Animations.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <br /><hr /><br />
+                <div class="row gx-0">
+                    <div class="col-lg-6" style="color:black">
+                        <div class="img-fluid">
+                            <img src="assets/Skeletons&Sorcery_Assets/Skeletons&Sorcery_Rooms.png" alt="Skeletons & Sorcery 5 rooms" width="600" height="200" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="mb-1"><u>Room Switch</u></h1>
+                        <h3 class="mb-1">
+                            After defeating the enemies in 2 seperate rooms will the layout change.
+                            This is done so that the player is not playing the whole game in the same environment and to show all the props that have been made by the artist.
+                            There are 5 rooms in total, and after all five rooms have been shown, the next room will be random.
+                            To make sure the randomization didnt choose the same room multiple times in a row,
+                            I put in a check for if the next randomized room is the same as the room that was active before.
+                            If these rooms are the same, the randomizer will pick a new room and starts the process again checking if it is the same room as before.
+                        </h3>
+                        <h6><a href="https://github.com/Flexi4b/Player_Carry_NPC/blob/main/Player_Carry_NPC.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects-->
+    <section class="content-section" id="projects" style="background-color:goldenrod">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center" style="color:black">
+                <h2 class="mb-5">My Projects:</h2>
+            </div>
+            <div class="row gx-0">
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="skeletons_and_sorcery.html">
+                        <div class="caption">
+                            <div class="caption-content mb-5">
+                                <div class="h1">Skeletons & Sorcery</div>
+                                <p class="mb-0">It's a rouge-like elemental card game!</p>
+                            </div>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="assets/Skeletons&Sorcery_Assets/Skeletons&Sorcery_Thumbnail.png" alt="Titlescreen Skeletons & Sorcery" height="486" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="global_game_jam.html">
+                        <div class="caption">
+                            <div class="caption-content mb-5">
+                                <div class="h1">Global Game Jam</div>
+                                <p class="mb-0">Games made for the Global Game Jam</p>
+                            </div>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="assets/Global_GameJam_Assets/GlobalGameJamLogo_Kopie.jpg" alt="Global Game Jam logo" height="486" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="bullfrog_blitz.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">Bullfrog Blitz</div>
+                                <p class="mb-0">It's a top-Down shooter!</p>
+                                <br /><br /><br /><br />
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/BullfrogBlitz_Assets/Bullfrog_Blitz_poster.png" alt="Join forces and defeat the sovjet rats! - Poster" />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="dread_race.html">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">Dread Race</div>
+                                <p class="mb-0">It's a night racer!</p>
+                                <br /><br /><br /><br />
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/DreadRace_Assets/Dread_racer_poster.png" alt="Spooky scene of a church in a cemetary." />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="pokemon_paradoxical.html">
+                        <div class="caption">
+                            <div class="caption-content mb-5">
+                                <div class="h1">Pokémon Paradoxical</div>
+                                <p class="mb-0">My own pokémon game!</p>
+                            </div>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="assets/Paradoxical_Assets/Pokemon_Paradoxical_Titlescreen.png" alt="Titlescreen Pokémon Paradoxical" height="486" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center" id="contact" style="background-color:darkslategray">
+        <div class="container px-4 px-lg-5">
+            <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                </li>
+            </ul>
+            <p class="small mb-0" style="color:white">Copyright &copy; Portfolio Fabian Dekker 2024</p>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
