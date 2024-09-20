@@ -22,7 +22,7 @@
     <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
     <nav id="sidebar-wrapper" style="background-color:indigo">
         <ul class="sidebar-nav">
-            <li class="sidebar-brand" style="background-color:darkviolet"><a href="index.html">Fabian Dekker</a></li>
+            <li class="sidebar-brand" style="background-color:darkviolet"><a href="index.html">Home</a></li>
             <li class="sidebar-nav-item"><a href="#current">Skeletons & Sorcery</a></li>
             <li class="sidebar-nav-item"><a href="#contribution">My Contributions</a></li>
             <li class="sidebar-nav-item"><a href="#projects">Projects</a></li>
@@ -34,13 +34,14 @@
         <div class="container px-4 px-lg-5">
             <div class="content-section-heading text-center" style="color:black">
                 <h2 class="mb-1">Skeletons & Sorcery</h2>
-                <video autoplay muted loop width="900">
+                <video autoplay muted loop width="100%">
                     <source src="assets/Skeletons&Sorcery_Assets/Skeletons&Sorcery_Trailer.mp4" type="video/mp4" />
                 </video>
                 <h4 class="mb-0">Skeletons & Sorcery is a rouge-like card game.</h4>
                 <h4 class="mb-0">You have entered this tower to climb to the top, but all the creatures in this tower are trying to kick you out.</h4>
                 <br />
                 <h4><a href="https://flexi4.itch.io/skeletons-and-sorcery" target="_blank" rel="noopener noreferrer">This game is playable on Itch.io</a></h4>
+                <br />
                 <h4 class="mb-0">Made by:</h4>
                 <h4 class="mb-0">Artists: Luna Oppatja, Santos Geerman, Vic Ramjiawansingh, Lee Lotus Rijbeek, Louisa Burfitt.</h4>
                 <h4 class="mb-0">Developers: Elgin Huisden, Casper Ketelaars & Fabian Dekker.</h4>
@@ -54,41 +55,41 @@
                 <h2 class="mb-5">My Contributions:</h2>
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <video autoplay muted loop width="600" height="350">
+                        <video autoplay muted loop width="100%">
                             <source src="assets/Skeletons&Sorcery_Assets/Skeletons&Sorcery_Warrior_State.mp4" type="video/mp4" />
                         </video>
                     </div>
-                    <div class="col-lg-6">
-                        <h1 class="mb-1"><u>Warrior Enemy</u></h1>
-                        <h3 class="mb-1">
+                    <div class="col-lg-6" style="padding-left:10px">
+                        <h1 class="mb-1" style="text-align:left"><u>Warrior Enemy</u></h1>
+                        <h3 class="mb-1" style="text-align:left; text-transform:initial">
                             Whenever the player ends their turn, it is time for the enemies to attack.
-                            The warrior attacks the player every turn, that is until the warrior gets to half of his full health and gives itself an attack buff.
-                            When the warrior has the attack buff active it will deal dubbel damage to the player.
-                            This buff will only trigger once, this is so the warrior wont get too strong when it gets healed by the healer enemy.
+                            The warrior attacks the player every turn, that is, until the warrior gets to half of his full health and gives itself an attack buff.
+                            When the warrior has the attack buff active, it will deal double damage to the player.
+                            This buff will only trigger once, this is so the warrior won't get too strong when it gets healed by the healer enemy.
                         </h3>
-                        <h3 class="mb-1">
-                            For this to work, I made 3 states for the warrior to be in. This way i can make the warrior do his actions whenever i choose.
-                            His states are: Attacking, buff themself and waiting. When the attacking state is active, it will attack the player.
-                            Buff themselfs occurs when the warriors health reaches half.
-                            State waiting is used before or after the warriors turn, this is so the player & other enemies have a chance to do their actions.
+                        <h3 class="mb-1" style="text-align:left; text-transform:initial">
+                            For this to work, I made 3 states for the warrior to be in. This way, I can make the warrior do his actions whenever I choose.
+                            His states are: Attacking, buff themselves  and waiting. When the attacking state is active, it will attack the player.
+                            Buff themselves occurs when the warrior's health reaches half.
+                            State waiting is used before or after the warrior's turn, this is so the player & other enemies have a chance to do their actions.
                         </h3>
-                        <h6><a href="https://github.com/Flexi4b/Player_Carry_NPC/blob/main/Player_Carry_NPC.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
+                        <h6 style="text-align:left"><a href="https://github.com/Flexi4b/Player_Carry_NPC/blob/main/Player_Carry_NPC.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
                     </div>
                 </div>
                 <br /><hr /><br />
                 <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <h1 class="mb-1"><u>Enemies Animations</u></h1>
-                        <h3 class="mb-1">
+                    <div class="col-lg-6" style="padding-right:10px">
+                        <h1 class="mb-1" style="text-align:left; text-transform:initial"><u>Enemies Animations</u></h1>
+                        <h3 class="mb-1" style="text-align:left; text-transform:initial">
                             All enemies have animations for all their actions. They all have an: Start, Idle, Attack, Buff/Heal/Taunt, Hit and Death animation.
-                            I needed to make sure that all the animations got triggerd to play and all at the right time.
+                            I needed to make sure that all the animations got triggered to play and all at the right time.
                             The warrior enemy was the most difficult to figure out when to play its animation and to not mess with the other code that was already written.
                             But after making all the animations work, it was much easier to code the animation triggers for the healer and tank enemies.
                         </h3>
-                        <h6><a href="https://github.com/Flexi4b/Free_Locked_NPC/blob/main/CageBehavior.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
+                        <h6 style="text-align:left"><a href="https://github.com/Flexi4b/Free_Locked_NPC/blob/main/CageBehavior.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
                     </div>
                     <div class="col-lg-6" style="color:black">
-                        <video autoplay muted loop width="600" height="350">
+                        <video autoplay muted loop width="100%">
                             <source src="assets/Skeletons&Sorcery_Assets/Skeletons&Sorcery_Enemy_Animations.mp4" type="video/mp4" />
                         </video>
                     </div>
@@ -97,20 +98,20 @@
                 <div class="row gx-0">
                     <div class="col-lg-6" style="color:black">
                         <div class="img-fluid">
-                            <img src="assets/Skeletons&Sorcery_Assets/Skeletons&Sorcery_Rooms.png" alt="Skeletons & Sorcery 5 rooms" width="600" height="200" />
+                            <img src="assets/Skeletons&Sorcery_Assets/Skeletons&Sorcery_Rooms.png" alt="Skeletons & Sorcery 5 rooms" width="100%" />
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <h1 class="mb-1"><u>Room Switch</u></h1>
-                        <h3 class="mb-1">
-                            After defeating the enemies in 2 seperate rooms will the layout change.
+                    <div class="col-lg-6"  style="padding-left:10px">
+                        <h1 class="mb-1" style="text-align:left; text-transform:initial"><u>Room Switch</u></h1>
+                        <h3 class="mb-1" style="text-align:left; text-transform:initial">
+                            After defeating the enemies in 2 separate rooms will the layout change.
                             This is done so that the player is not playing the whole game in the same environment and to show all the props that have been made by the artist.
                             There are 5 rooms in total, and after all five rooms have been shown, the next room will be random.
-                            To make sure the randomization didnt choose the same room multiple times in a row,
+                            To make sure, the randomization didn't choose the same room multiple times in a row,
                             I put in a check for if the next randomized room is the same as the room that was active before.
-                            If these rooms are the same, the randomizer will pick a new room and starts the process again checking if it is the same room as before.
+                            If these rooms are the same, the randomizer will pick a new room and starts the process again, checking if it is the same room as before.
                         </h3>
-                        <h6><a href="https://github.com/Flexi4b/Player_Carry_NPC/blob/main/Player_Carry_NPC.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
+                        <h6 style="text-align:left"><a href="https://github.com/Flexi4b/Player_Carry_NPC/blob/main/Player_Carry_NPC.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
                     </div>
                 </div>
             </div>
@@ -194,10 +195,13 @@
         <div class="container px-4 px-lg-5">
             <ul class="list-inline mb-5">
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-linkedin"></i></a>
+                    <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/fabian-dekker-156bab2b5/"
+                       target="_blank" rel="noopener noreferrer"><i class="icon-social-linkedin"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                    <a class="social-link rounded-circle text-white" href="https://github.com/Flexi4b" target="_blank" rel="noopener noreferrer">
+                        <i class="icon-social-github"></i>
+                    </a>
                 </li>
             </ul>
             <p class="small mb-0" style="color:white">Copyright &copy; Portfolio Fabian Dekker 2024</p>

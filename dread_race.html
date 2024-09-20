@@ -22,7 +22,7 @@
     <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
     <nav id="sidebar-wrapper" style="background-color:indigo">
         <ul class="sidebar-nav">
-            <li class="sidebar-brand" style="background-color:darkviolet"><a href="index.html">Fabian Dekker</a></li>
+            <li class="sidebar-brand" style="background-color:darkviolet"><a href="index.html">Home</a></li>
             <li class="sidebar-nav-item"><a href="#current">Dread Race</a></li>
             <li class="sidebar-nav-item"><a href="#contribution">My Contributions</a></li>
             <li class="sidebar-nav-item"><a href="#projects">Projects</a></li>
@@ -34,7 +34,7 @@
         <div class="container px-4 px-lg-5">
             <div class="content-section-heading text-center" style="color:black">
                 <h2 class="mb-1">Dread Race</h2>
-                <video autoplay muted loop width="900">
+                <video autoplay muted loop width="100%">
                     <source src="assets/DreadRace_Assets/Dread_Race_Gameplay_Vid.mp4" type="video/mp4" />
                 </video>
                 <h4 class="mb-0">Dread Race is a race game in which you try to complete 3 laps as fast as possible!</h4>
@@ -53,22 +53,22 @@
                 <h2 class="mb-5">My Contributions:</h2>
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <video autoplay muted loop width="600" height="350">
+                        <video autoplay muted loop width="100%">
                             <source src="assets/DreadRace_Assets/Dread_Race_Drift.mp4" type="video/mp4" />
                         </video>
                     </div>
-                    <div class="col-lg-6">
-                        <h1 class="mb-1"><u>Drifting</u></h1>
-                        <h3 class="mb-1">
+                    <div class="col-lg-6"  style="padding-left:10px">
+                        <h1 class="mb-1" style="text-align:left; text-transform:initial"><u>Drifting</u></h1>
+                        <h3 class="mb-1" style="text-align:left; text-transform:initial">
                             Because the track has many sharp turns, a drift was absolutely necessary. But making the drift work was rather difficult. 
                             I needed to make sure you could not drift for too long, as you would just spin out, and in needed to feel good when you use it.
                             So, I decided to use two sets of wheels. The first set is for driving normally, the second one is for when the player decides to drift.
                         </h3>
-                        <h3 class="mb-1">
+                        <h3 class="mb-1" style="text-align:left; text-transform:initial">
                             This way I could give new values to the wheels without having to change them back.
-                            For instance, the normal wheels forward- and sideways frictions asymptote slip sits at a 0.8f and 0.05f respectfully.
-                            While for the drift wheels the same forward- and sideways frictions asymptote slip is a 0.25f and 0.9f respectfully.
-                            What this means is that while the drift is engaged the cars forward friction is set lower than the sideways friction,
+                            For instance, the normal wheels forward- and sideways friction asymptote slip sits at a 0.8f and 0.05f respectfully.
+                            While for the drift wheels the same forward- and sideways friction asymptote slip is a 0.25f and 0.9f respectfully.
+                            What this means is that while the drift is engaged, the car's forward friction is set lower than the sideways friction,
                             so that the car turns sideways and drifts.
                         </h3>
                         <h6><a href="https://github.com/Flexi4b/CarControls/blob/main/CarControls.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
@@ -76,18 +76,18 @@
                 </div>
                 <br /><hr /><br />
                 <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <h1 class="mb-1"><u>Path Triggers</u></h1>
-                        <h3 class="mb-1">
-                            Because the track has a split path, there needed to be restrictions on the other path so the player would not drive around in circles.
+                    <div class="col-lg-6"  style="padding-right:10px">
+                        <h1 class="mb-1" style="text-align:left; text-transform:initial"><u>Path Triggers</u></h1>
+                        <h3 class="mb-1" style="text-align:left; text-transform:initial">
+                            Because the track has a split path, there needed to be restrictions on the other path, so the player would not drive around in circles.
                             This is why, when you exit the church and choose a path (let's say path A), the other path (path B) gets blocked off.
                             The closed path (path B) only opens again when the player chooses that path (path B) when it exits the church,
-                            of course this means that again the other path (path A) gets closed off.
+                            of course, this means that again, the other path (path A) gets closed off.
                         </h3>
                         <h6><a href="https://github.com/Flexi4b/PathTriggers/blob/main/PathTrigger.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
                     </div>
                     <div class="col-lg-6" style="color:black">
-                        <video autoplay muted loop width="600" height="350">
+                        <video autoplay muted loop width="100%">
                             <source src="assets/DreadRace_Assets/Dread_Race_PathTrigger.mp4" type="video/mp4" />
                         </video>
                     </div>
@@ -95,18 +95,18 @@
                 <br /><hr /><br />
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <video autoplay muted loop width="600" height="350">
+                        <video autoplay muted loop width="100%">
                             <source src="assets/DreadRace_Assets/Dread_Race_Respawn.mp4" type="video/mp4" />
                         </video>
                     </div>
-                    <div class="col-lg-6">
-                        <h1 class="mb-1"><u>Checkpoints</u></h1>
-                        <h3 class="mb-1">
+                    <div class="col-lg-6"  style="padding-left:10px">
+                        <h1 class="mb-1" style="text-align:left; text-transform:initial"><u>Checkpoints</u></h1>
+                        <h3 class="mb-1" style="text-align:left; text-transform:initial">
                             Just in case the player got stuck off the road or does not remember which way to go, there needed to be a checkpoint system.
                             So, over the track are some checkpoints, whenever the player drives into one of these checkpoints, their position and rotation gets saved.
                             This way, whenever the player presses the respawn key, they get teleported back towards the last touched checkpoint.
                         </h3>
-                        <h6><a href="https://github.com/Flexi4b/RespawnCheckpoints/blob/main/RespawnCheckpoints.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
+                        <h6 style="text-align:left;"><a href="https://github.com/Flexi4b/RespawnCheckpoints/blob/main/RespawnCheckpoints.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
                     </div>
                 </div>
             </div>
@@ -190,10 +190,13 @@
         <div class="container px-4 px-lg-5">
             <ul class="list-inline mb-5">
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-linkedin"></i></a>
+                    <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/fabian-dekker-156bab2b5/"
+                       target="_blank" rel="noopener noreferrer"><i class="icon-social-linkedin"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                    <a class="social-link rounded-circle text-white" href="https://github.com/Flexi4b" target="_blank" rel="noopener noreferrer">
+                        <i class="icon-social-github"></i>
+                    </a>
                 </li>
             </ul>
             <p class="small mb-0" style="color:white">Copyright &copy; Portfolio Fabian Dekker 2024</p>
