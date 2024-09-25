@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-lg-6"  style="padding-left:20px">
                         <h1 class="mb-1" style="text-align:left; text-transform:initial"><u>Drifting</u></h1>
-                        <h3 class="mb-1" style="text-align:left; text-transform:initial">
+                        <!--<h3 class="mb-1" style="text-align:left; text-transform:initial">
                             Because the track has many sharp turns, a drift was absolutely necessary. But making the drift work was rather difficult. 
                             I needed to make sure you could not drift for too long, as you would just spin out, and in needed to feel good when you use it.
                             So, I decided to use two sets of wheels. The first set is for driving normally, the second one is for when the player decides to drift.
@@ -70,8 +70,16 @@
                             While for the drift wheels the same forward- and sideways friction asymptote slip is a 0.25f and 0.9f respectfully.
                             What this means is that while the drift is engaged, the car's forward friction is set lower than the sideways friction,
                             so that the car turns sideways and drifts.
+                        </h3>-->
+                        <h3 class="mb-1" style="text-align:left; text-transform:initial">
+                            Due to the track's sharp turns, drifting was essential but challenging. 
+                            I needed to limit drift duration to prevent spinning out while ensuring it felt good. 
+                            To achieve this, I used two sets of wheels: one for normal driving and another for drifting. 
+                            This allowed me to adjust wheel values without reverting them. 
+                            For example, the normal wheels have forward and sideways friction of 0.8f and 0.05f, while the drift wheels have 0.25f and 0.9f. 
+                            This configuration lowers forward friction during a drift, enabling the car to turn sideways effectively.
                         </h3>
-                        <h6><a href="https://github.com/Flexi4b/CarControls/blob/main/CarControls.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
+                        <h4 style="text-align:left"><a href="https://github.com/Flexi4b/CarControls/blob/main/CarControls.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h4>
                     </div>
                 </div>
                 <br /><hr /><br />
@@ -84,7 +92,7 @@
                             The closed path (path B) only opens again when the player chooses that path (path B) when it exits the church,
                             of course, this means that again, the other path (path A) gets closed off.
                         </h3>
-                        <h6><a href="https://github.com/Flexi4b/PathTriggers/blob/main/PathTrigger.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
+                        <h4 style="text-align:left"><a href="https://github.com/Flexi4b/PathTriggers/blob/main/PathTrigger.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h4>
                     </div>
                     <div class="col-lg-6" style="color:black">
                         <video autoplay muted loop width="100%">
@@ -106,7 +114,7 @@
                             So, over the track are some checkpoints, whenever the player drives into one of these checkpoints, their position and rotation gets saved.
                             This way, whenever the player presses the respawn key, they get teleported back towards the last touched checkpoint.
                         </h3>
-                        <h6 style="text-align:left;"><a href="https://github.com/Flexi4b/RespawnCheckpoints/blob/main/RespawnCheckpoints.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h6>
+                        <h4 style="text-align:left;"><a href="https://github.com/Flexi4b/RespawnCheckpoints/blob/main/RespawnCheckpoints.cs" target="_blank" rel="noopener noreferrer">Learn more about my code here</a></h4>
                     </div>
                 </div>
             </div>
@@ -124,7 +132,7 @@
                         <div class="caption">
                             <div class="caption-content mb-5">
                                 <div class="h1">Skeletons & Sorcery</div>
-                                <p class="mb-0">It's a rouge-like elemental card game!</p>
+                                <p class="mb-0">It's a rogue-like elemental card game!</p>
                             </div>
                         </div>
                         <div class="img-fluid">
